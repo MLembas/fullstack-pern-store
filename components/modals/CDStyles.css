@@ -1,0 +1,52 @@
+.CD_wrapper{ 
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(0,0,0,0.4);
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.CD_wrapper.active{
+   /* transform: scale(1); */
+   opacity: 1;
+   pointer-events: all;
+}
+
+.CD_content{
+   padding: 20px;
+   border-radius: 12px;
+   background-color: white;
+   height: 280px;
+   width: 460px;
+   transform: scale(0.5);
+   transition: 0.4s all;
+}
+
+.CD_content.active{
+   transform: scale(1);
+}
+.CD_title{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.CD_input{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%
+}
+
+.CD_buttons{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+   padding: 0px 20px;
+}
